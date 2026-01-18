@@ -1,41 +1,17 @@
-.header-div {
-    background-color: #00B4D8;
-    color: white;
+:root {
+    --bs-body-bg: #D9D9D9;
 }
 
-.middle-div-80 {
-    background-color: #48CAE4;
-    color: white;
+.card-width {
+    max-width: 700px;
 }
 
-.middle-div-60 {
-    background-color: #90E0EF;
-    color: white;
-}
-
-.middle-div-40 {
-    background-color: #ADE8F4;
-    color: white;
-}
-
-
-.bottom-div-1 {
-    background-color: #CAF0F8;
-    color: white;
-}
-
-.bottom-div-2 {
-    background-color: #daf6fc;
-    color: white;
-}
-
-.bg-body {
+.btn-primary {
     background-color: #353535 !important;
+    border-color: #353535 !important;
 }
 
-@media (min-width: 992px) {
-  .row-cols-lg-7 > * {
-    flex: 0 0 auto;
-    width: 14.285714%; /* Resultado de 100 / 7 */
-  }
+.btn-primary:hover {
+    background-color: #252525 !important;
+    border-color: #252525 !important;
 }
