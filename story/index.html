@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuéntame una historia</title>
+    <title>Historia de Linux</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -15,8 +15,8 @@
     </nav>
     <!-- Title and little introduction -->
     <header>
-        <h1></h1>
-        <p></p>
+        <h1>Kernel 0.01</h1>
+        <p>En 1991, un estudiante finlandés de 21 años envió un mensaje a un grupo de noticias de Usenet anunciando un proyecto "solo por diversión". No sabía que ese pequeño núcleo de software (kernel) desataría la mayor batalla filosófica y técnica en la historia de la informática, desafiaría a los monopolios más grandes del mundo y se convertiría en la base de la infraestructura de internet, los superordenadores y los teléfonos móviles modernos. Esta es la historia de Linux.</p>
     </header>
     <!-- Story content -->
     <main>
@@ -24,34 +24,54 @@
         <article>
             <!-- First chapter -->
             <section>
-                <h2></h2>
-                <p></p>
+                <h2>El Legado UNIX</h2>
+                <p>Antes de que existiera Linux, el mundo de la informática de alto rendimiento estaba gobernado por UNIX. Nacido en los laboratorios Bell de AT&T a finales de los 60 (gracias a leyendas como Ken Thompson y Dennis Ritchie), UNIX era un sistema operativo potente, multiusuario y multitarea. Su gran revolución fue haber sido reescrito en lenguaje C, lo que lo hacía portable a diferentes arquitecturas de hardware.</p>
+                <p>Sin embargo, durante los años 80, UNIX se fragmentó y se privatizó. Lo que antes era un entorno de colaboración académica se convirtió en una guerra de licencias costosas y código cerrado (AIX de IBM, HP-UX, Solaris).</p>
+                <p>Para un estudiante de informática promedio, acceder al código fuente de un sistema operativo real para aprender cómo funcionaba "por dentro" era legal y económicamente imposible. Aquí entra en juego Minix, creado por el profesor Andrew S. Tanenbaum: un clon de UNIX diseñado con fines educativos, pero con una licencia que limitaba su modificación y distribución. El escenario estaba listo para una alternativa libre.</p>
             </section>
             <!-- Second chapter -->
             <section>
-                <h2></h2>
-                <p></p>
+                <h2>"Solo es un hobby"</h2>
+                <p>El 25 de agosto de 1991, Linus Torvalds publicó en el grupo de noticias comp.os.minix su famoso mensaje: "Hola a todos... estoy haciendo un sistema operativo (gratuito) (solo un hobby, no será grande ni profesional como gnu) para clones AT 386(486)...".</p>
+                <p>Lo que comenzó como un emulador de terminal para acceder a los servidores de la universidad, pronto se convirtió en un kernel funcional. Sin embargo, la arquitectura elegida por Linus desató una de las discusiones técnicas más famosas de la historia: El debate Microkernel vs. Kernel Monolítico.</p>
+                <ul>
+                    <li>La postura de Tanenbaum (Minix): Defendía el diseño de Microkernel. En teoría, es más estable y moderno porque los servicios del sistema (como el sistema de archivos o los drivers de red) se ejecutan en el espacio de usuario, separados del núcleo central. Si un driver falla, el sistema no colapsa. Tanenbaum le dijo famosamente a Linus: "LINUX is obsolete" (LINUX es obsoleto).</li>
+                    <li>La postura de Torvalds (Linux): Optó por un Kernel Monolítico. Todos los servicios esenciales (gestión de memoria, CPU, drivers) residen dentro del mismo espacio de memoria del kernel. Linus argumentó que, aunque el microkernel es teóricamente superior, en la práctica (en 1991) era complejo y lento debido al paso de mensajes. El diseño monolítico era pragmático, rápido y funcionaba eficientemente en la arquitectura Intel 386.</li>
+                </ul>
+                <p>Linus ganó esta batalla no con teoría, sino con código funcional. La comunidad prefirió un sistema que funcionaba ya y que podían modificar, frente a un sistema académicamente perfecto pero restrictivo.</p>
             </section>
             <!-- Third chapter -->
             <section>
-                <h2></h2>
-                <p></p>
+                <h2>Modelo "Bazar"</h2>
+                <p>Tras el debate, quedó claro por qué Linux sobreviviría: la licencia GPL. Linus decidió liberar su kernel bajo la Licencia Pública General de GNU (creada por Richard Stallman). Esto garantizaba que cualquiera podía ver, modificar y mejorar el código, siempre que los cambios se mantuvieran libres.</p>
+                <p>Técnicamente, Linux llenó el último hueco que faltaba en el proyecto GNU. Stallman y su equipo habían creado compiladores (GCC), editores (Emacs) y shells (Bash), pero les faltaba un kernel (su propio proyecto, Hurd, estaba estancado debido a la complejidad de su diseño de microkernel).</p>
+                <p>La unión de GNU + Linux creó un sistema operativo completo. A diferencia del modelo "Catedral" (software propietario desarrollado en secreto), Linux adoptó el modelo "Bazar" (descrito por Eric S. Raymond): Release early, release often (Lanza pronto, lanza a menudo). Miles de desarrolladores empezaron a enviar parches para mejorar el soporte de hardware, optimizar el planificador de procesos (scheduler) y robustecer la pila TCP/IP. La inteligencia colectiva superó al desarrollo cerrado.</p>
             </section>
             <!-- Fourthchapter -->
             <section>
-                <h2></h2>
-                <p></p>
+                <h2>El Enemigo Público</h2>
+                <p>A finales de los 90, Linux ya no era un juguete. Servidores web de todo el mundo empezaron a migrar de Windows NT a Linux debido a su estabilidad y coste cero. Esto despertó al gigante: Microsoft.</p>
+                <p>En 1998, se filtraron los "Documentos de Halloween", una serie de memorandos confidenciales de Microsoft. En ellos, los ingenieros de Microsoft admitían que el software de código abierto (FOSS) amenazaba su modelo de negocio y reconocían la superioridad técnica de Linux en ciertos aspectos. Su estrategia fue "FUD" (Fear, Uncertainty, Doubt - Miedo, Incertidumbre y Duda) para asustar a las empresas que querían adoptar Linux.</p>
+                <p>Steve Ballmer, CEO de Microsoft, llegó a llamar a Linux "un cáncer que se adhiere a todo lo que toca" en referencia a la licencia GPL. Hubo batallas legales, intentos de patentes agresivas y campañas de desprestigio. Sin embargo, la superioridad técnica del kernel en servidores y la flexibilidad para adaptarse a cualquier arquitectura (desde supercomputadoras hasta routers) hicieron que Linux fuera imparable.</p>
             </section>
             <!-- Fifth chapter -->
             <section>
-                <h2></h2>
-                <p></p>
+                <h2>El Kernel del Mundo</h2>
+                <p>Hoy en día, la guerra ha terminado y la ironía es palpable: Microsoft es ahora uno de los mayores contribuyentes al código de Linux y utiliza Linux para gestionar gran parte de su propia nube (Azure).</p>
+                <p>Linux ha logrado una "dominación mundial" silenciosa pero absoluta:</p>
+                <ol>
+                    <li>Supercomputación: El 100% de las 500 supercomputadoras más potentes del mundo corren Linux.</li>
+                    <li>Móviles: Android utiliza el kernel de Linux, lo que lo convierte en el SO más usado del planeta por número de dispositivos.</li>
+                    <li>Infraestructura: La nube (Cloud Computing), la bolsa de valores y la infraestructura crítica de Internet dependen de la estabilidad de Linux.</li>
+                    <li>Exploración Espacial: El helicóptero Ingenuity en Marte vuela gracias a Linux.</li>
+                </ol>
+                <p>El "hobby" de Linus Torvalds demostró que la colaboración abierta y la excelencia técnica pueden superar a los modelos de negocio más restrictivos. El código es libre, y gracias a ello, el conocimiento también lo es.</p>
             </section>
         </article>
     </main>
     <!-- Footer -->
     <footer>
-        
+        <p>Historia de Linux - Web Educativa</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
