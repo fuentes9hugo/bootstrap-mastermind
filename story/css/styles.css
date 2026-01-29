@@ -12,9 +12,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2 {    
-  text-decoration: underline rgba(255, 0, 0, 1) 7px !important;    
+  text-decoration: underline red 7px !important;    
   text-underline-offset: 10px !important;
   margin-bottom: 16px;
+}
+
+strong {
+    color: red;
 }
 
 .text-bg-dark {
