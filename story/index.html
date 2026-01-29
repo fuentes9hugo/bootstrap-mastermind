@@ -45,14 +45,45 @@
             </section>
             <!-- Second chapter -->
             <section id="chapter-2" class="container p-5">
-                <h2>2. "Solo es un hobby"</h2>
-                <p>El 25 de agosto de 1991, <strong>Linus Torvalds</strong> publicó en el grupo de noticias comp.os.minix su famoso mensaje: "Hola a todos... estoy haciendo un sistema operativo (gratuito) (solo un hobby, no será grande ni profesional como gnu) para clones AT 386(486)...".</p>
-                <p>Lo que comenzó como un emulador de terminal para acceder a los servidores de la universidad, pronto se convirtió en un kernel funcional. Sin embargo, la arquitectura elegida por Linus desató una de las discusiones técnicas más famosas de la historia: <strong>El debate Microkernel vs. Kernel Monolítico.</strong></p>
-                <ul>
-                    <li><strong>La postura de Tanenbaum (Minix):</strong> Defendía el diseño de <strong>Microkernel</strong>. En teoría, es más estable y moderno porque los servicios del sistema (como el sistema de archivos o los drivers de red) se ejecutan en el espacio de usuario, separados del núcleo central. Si un driver falla, el sistema no colapsa. Tanenbaum le dijo famosamente a Linus: "LINUX is obsolete" (LINUX es obsoleto).</li>
-                    <li><strong>La postura de Torvalds (Linux):</strong> Optó por un <strong>Kernel Monolítico</strong>. Todos los servicios esenciales (gestión de memoria, CPU, drivers) residen dentro del mismo espacio de memoria del kernel. Linus argumentó que, aunque el microkernel es teóricamente superior, en la práctica (en 1991) era complejo y lento debido al paso de mensajes. El diseño monolítico era pragmático, rápido y funcionaba eficientemente en la arquitectura Intel 386.</li>
-                </ul>
-                <p>Linus ganó esta batalla no con teoría, sino con código funcional. La comunidad prefirió un sistema que funcionaba ya y que podían modificar, frente a un sistema académicamente perfecto pero restrictivo.</p>
+                
+                    <h2>2. "Solo es un hobby"</h2>
+                    <p>El 25 de agosto de 1991, <strong>Linus Torvalds</strong> publicó en el grupo de noticias comp.os.minix su famoso mensaje: "Hola a todos... estoy haciendo un sistema operativo (gratuito) (solo un hobby, no será grande ni profesional como gnu) para clones AT 386(486)...".</p>
+                    <p>Lo que comenzó como un emulador de terminal para acceder a los servidores de la universidad, pronto se convirtió en un kernel funcional. Sin embargo, la arquitectura elegida por Linus desató una de las discusiones técnicas más famosas de la historia: <strong>El debate Microkernel vs. Kernel Monolítico.</strong></p>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><strong>La postura de Tanenbaum (Minix):</strong> Defendía el diseño de <strong>Microkernel</strong>. En teoría, es más estable y moderno porque los servicios del sistema (como el sistema de archivos o los drivers de red) se ejecutan en el espacio de usuario, separados del núcleo central. Si un driver falla, el sistema no colapsa. Tanenbaum le dijo famosamente a Linus: "LINUX is obsolete" (LINUX es obsoleto).</p>
+                        </div>
+                        <div class="col-6">
+                            <p><strong>La postura de Torvalds (Linux):</strong> Optó por un <strong>Kernel Monolítico</strong>. Todos los servicios esenciales (gestión de memoria, CPU, drivers) residen dentro del mismo espacio de memoria del kernel. Linus argumentó que, aunque el microkernel es teóricamente superior, en la práctica (en 1991) era complejo y lento debido al paso de mensajes. El diseño monolítico era pragmático, rápido y funcionaba eficientemente en la arquitectura Intel 386.</p>
+                        </div>
+                    </div>
+                    <div class="row my-4 g-5 g-sm-0">
+                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                            <div class="card border border-3 border-primary" style="width: 18rem;">
+                                <img src="img/microkernel.webp" class="card-img-top" style="aspect-ratio: 5 / 7; object-fit: cover; object-position: top;" alt="Microkernel">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Servicios ejecutándose en espacio de usuario</li>
+                                        <li class="list-group-item">Comunicación basada en paso de mensajes (IPC)</li>
+                                        <li class="list-group-item">Alta modularidad y aislamiento de fallos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                            <div class="card border border-3 border-warning" style="width: 18rem;">
+                                <img src="img/kernel-monolitico.webp" class="card-img-top" style="aspect-ratio: 5 / 7; object-fit: cover; object-position: top;" alt="Microkernel">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Servicios en el mismo espacio de memoria del kernel</li>
+                                        <li class="list-group-item">Comunicación directa para máximo rendimiento</li>
+                                        <li class="list-group-item">Gestión centralizada y acceso directo al hardware</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Linus ganó esta batalla no con teoría, sino con código funcional. La comunidad prefirió un sistema que funcionaba ya y que podían modificar, frente a un sistema académicamente perfecto pero restrictivo.</p>
             </section>
             <!-- Third chapter -->
             <section id="chapter-3" class="container p-5">
