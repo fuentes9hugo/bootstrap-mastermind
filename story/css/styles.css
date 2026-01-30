@@ -21,8 +21,17 @@ strong {
     color: red;
 }
 
+q {
+    text-decoration: underline #8D949A 2px;
+    font-size: 1rem !important;
+}
+
 .text-bg-dark {
     background-color: #3e4246 !important;
+}
+
+.bg-navbar {
+    background-color: #4B5359;
 }
 
 .bg-container {
