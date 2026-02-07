@@ -30,7 +30,16 @@ li {
     border: none !important;
 }
 
-/* This class sets the text to no color and 2px white border */
+input, select, .input-group-text {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border-color: red !important;
+    color: white !important;
+}
+
+option {
+    background-color: #212529;
+}
 
 .vr {
     color: red;
@@ -45,6 +54,7 @@ li {
     height: 5%;
 }
 
+/* These classes sets the text to no color and 2px white border */
 .reversed-text {
     color: transparent;
     -webkit-text-stroke: 2px white;
