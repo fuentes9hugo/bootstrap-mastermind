@@ -31,9 +31,28 @@ li {
 }
 
 /* This class sets the text to no color and 2px white border */
+
+.vr {
+    color: red;
+    opacity: 1;
+}
+
+.vr-y {
+    width: 10%;
+}
+
+.vr-x {
+    height: 5%;
+}
+
 .reversed-text {
     color: transparent;
     -webkit-text-stroke: 2px white;
+}
+
+.reversed-text-1 {
+    color: transparent;
+    -webkit-text-stroke: 1px red;
 }
 
 .start-10 {
@@ -59,6 +78,10 @@ li {
 
 .text-danger {
     color: red !important;
+}
+
+.btn-danger {
+    background-color: red;
 }
 
 @media (min-width: 768px) {
