@@ -9,7 +9,7 @@ En primer lugar elige un deporte o una competición que te guste (si además es 
 Diseña una página que tenga como mínimo los siguientes aspectos trabajados a lo largo del capítulo:
 
 1. El contenido principal será una foto de todos los miembros del equipo, al menos 9 miembros utilizando flex.
-2. Para cada miembro, además de la foto,  aparecerán dos datos del mismo en portada en tipo texto de la siguiente forma:La compañía  
+2. Para cada miembro, además de la foto,  aparecerán dos datos del mismo en portada en tipo texto de la siguiente forma:
     - Crea una ventana de que señale más información de los jugadores mediante el componente Modal
     - En uno de los jugadores se aplicará un PopOver indicando que es un nuevo fichaje
 3. Crea un carousel con un mínimo de 3 imágenes de algún evento, torneo u otra foto importante del equipo. 
