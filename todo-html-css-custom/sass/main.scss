@@ -1,0 +1,22 @@
+// $deeppurple: #311B92;
+// $deeppurple2: #311B93;
+// $primary: $deeppurple;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$masterdark: #B71C1C;
+$masterlight: #FFCDD2;
+
+// Custom Mastermind theme
+$master-colors: (
+    "masterdark": $masterdark,
+    "masterlight": $masterlight
+);
+
+$theme-colors:map-merge($master-colors, $theme-colors);
+
+
+// Importar las librerias fuente de bootstrp
+// Comenzar a realizar modificaciones
+@import '../node_modules/bootstrap/scss/bootstrap'
