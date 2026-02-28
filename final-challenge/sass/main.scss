@@ -1,0 +1,26 @@
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$newbglight: #F8F9FA;
+$newtextdark: #212529;
+$newbtnlight: #0D6EFD;
+
+$newbgdark: #212529;
+$newtextlight: #E9ECEF;
+$newbtndark: #FFC107;
+
+$highlight: #ADB5BD;
+
+$new-colors: (
+    "newbglight": $newbglight,
+    "newtextdark": $newtextdark,
+    "newbtnlight": $newbtnlight,
+    "newbgdark": $newbgdark,
+    "newtextlight": $newtextlight,
+    "newbtndark": $newbtndark,
+    "highlight": $highlight
+);
+
+$theme-colors: map-merge($new-colors, $theme-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
