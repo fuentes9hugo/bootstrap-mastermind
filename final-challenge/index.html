@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
     <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script defer src="js/app.js"></script>
 </head>
-<body class="bg-newbgdark">
+<body class="bg-newbgdark text-newtextlight">
     <header>
         <nav class="navbar  fixed-top bg-newbglight navbar-expand-lg" data-bs-theme="light">
             <div class="container-fluid">
@@ -35,7 +43,9 @@
                             <a class="nav-link" aria-current="page" href="#stores">Tiendas</a>
                         </li>
                     </ul>
-                    <div class="navbar-nav"><a class="nav-link" href="#contact">Contactar</a></div>
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#contact">Contactar</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -63,12 +73,60 @@
             </div>
         </section>
         <!-- PRODUCT -->
-        <section id="product">
-
+        <section class="container my-5" id="product">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-md-5" data-bs-toggle="modal" data-bs-target="#product-modal" style="cursor: pointer;">
+                    <img class="img-fluid rounded" src="img/pdp-image.png" alt="Imagen primer plano PC">
+                </div>
+                <div class="col-12 col-md-7 text-center align-middle">
+                    <h2>El PC de Alto Rendimiento en Blanco Puro</h2>
+                    <p>Este sistema redefine el concepto de PC de alto rendimiento, combinando una <strong>estética minimalista en blanco ártico</strong> con un chasis de cristal templado que ofrece una visión panorámica excepcional. Su diseño no solo es visualmente impactante, sino que está pensado para integrarse como una pieza de arte tecnológico en cualquier espacio de trabajo o setup de juegos de nivel entusiasta.</p>
+                    <p>Equipado con un avanzado sistema de <strong>refrigeración líquida personalizada</strong> y una disposición optimizada de componentes, este equipo garantiza un rendimiento térmico superior bajo máxima carga. Es la unión perfecta entre ingeniería de precisión y elegancia, diseñada específicamente para quienes exigen potencia bruta sin renunciar a un estilo sofisticado y limpio.</p>
+                    <a href="#contact"><button class="btn btn-newbtndark">Contactar</button></a>
+                </div>
+            </div>
         </section>
         <!-- SPECIFICATIONS -->
-        <section id="specs">
-        
+        <section class="bg-newbglight text-newtextdark py-5" id="specs">
+            <div class="container">
+                <h2 class="text-uppercase">Especificaciones técnicas</h2>
+                <table class="table table-dark table-striped table-hover table-bordered table-sm">
+                    <tbody>
+                        <tr>
+                            <th>Chasis</th>
+                            <td>Lian Li O11 Dynamic EVO</td>
+                        </tr>
+                        <tr>
+                            <th>CPU</th>
+                            <td>Intel Core i9-14900K</td>
+                        </tr>
+                        <tr>
+                            <th>Placa Base</th>
+                            <td>ASUS ROG Maximus Z790 Formula</td>
+                        </tr>
+                        <tr>
+                            <th>Memoria RAM</th>
+                            <td>64GB (4x16GB) Corsair Dominator Titanium DDR5 White</td>
+                        </tr>
+                        <tr>
+                            <th>GPU</th>
+                            <td>NVIDIA RTX 4090</td>
+                        </tr>
+                        <tr>
+                            <th>Almacenamiento</th>
+                            <td>4TB NVMe SSD Gen5</td>
+                        </tr>
+                        <tr>
+                            <th>Ventiladores</th>
+                            <td>9x Lian Li UNI FAN SL-Infinity 120 White</td>
+                        </tr>
+                        <tr>
+                            <th>Fuente de alimentación</th>
+                            <td>ASUS ROG Thor 1200W Platinum II</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
         <!-- EXPERIENCES -->
         <section id="exps">
@@ -86,5 +144,15 @@
     <footer>
         
     </footer>
+    <!-- MODAL DE IMAGEN-->
+    <div class="modal fade" id="product-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="./img/pdp-image.png" class="img-fluid" alt="Imagen del producto tamaño completo">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
