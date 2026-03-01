@@ -4,12 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<body class="bg-newbgdark">
+    <header>
+        <nav class="navbar  fixed-top bg-newbglight navbar-expand-lg" data-bs-theme="light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/logo.svg" alt="Logo E-commerce" width="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-spy" aria-controls="navbar-spy" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-spy">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#product">Producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#specs">Especificaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#exps">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#stores">Tiendas</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav"><a class="nav-link" href="#contact">Contactar</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#nav-team-spy">
+        <!-- HERO -->
+        <section id="hero">
+            <div id="hero-carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/pc-room.jpg" alt="PC en habitación" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pc-inside.jpg" alt="PC por dentro" class="d-block w-100">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- PRODUCT -->
+        <section id="product">
+
+        </section>
+        <!-- SPECIFICATIONS -->
+        <section id="specs">
+        
+        </section>
+        <!-- EXPERIENCES -->
+        <section id="exps">
+        
+        </section>
+        <!-- STORES -->
+        <section id="stores">
+        
+        </section>
+        <!-- CONTACT -->
+        <section id="contact">
+        
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>

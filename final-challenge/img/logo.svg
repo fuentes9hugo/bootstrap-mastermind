@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050510" />
+      <stop offset="100%" stop-color="#120822" />
+    </linearGradient>
+
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#001829" />
+      <stop offset="100%" stop-color="#000812" />
+    </linearGradient>
+
+    <linearGradient id="magentaCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff00ff" />
+      <stop offset="100%" stop-color="#00f3ff" />
+    </linearGradient>
+
+    <pattern id="cyberGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00f3ff" stroke-width="0.5" opacity="0.15" />
+    </pattern>
+  </defs>
+
+  <polygon points="250,30 460,145 460,375 250,490 40,375 40,145" fill="url(#bgGrad)" stroke="url(#magentaCyan)" stroke-width="2" opacity="0.9"/>
+
+  <g stroke="#ff00ff" stroke-width="1.5" fill="none" opacity="0.3">
+    <path d="M 40 145 L 120 190 L 120 260" />
+    <circle cx="120" cy="260" r="3" fill="#ff00ff" />
+    <path d="M 460 375 L 380 330 L 380 260" />
+    <circle cx="380" cy="260" r="3" fill="#ff00ff" />
+    <path d="M 250 490 L 250 430 L 180 390" />
+  </g>
+
+  <g transform="translate(0, 32.5)">
+    <polygon points="120,100 380,100 410,130 410,270 380,300 120,300 90,270 90,130" fill="#0d0d1a" stroke="#00f3ff" stroke-width="3" filter="url(#neonGlow)"/>
+
+    <polygon points="125,108 375,108 402,135 402,265 375,292 125,292 98,265 98,135" fill="url(#screenGrad)"/>
+    <polygon points="125,108 375,108 402,135 402,265 375,292 125,292 98,265 98,135" fill="url(#cyberGrid)"/>
+
+    <polygon points="98,135 402,135 375,108 125,108" fill="#ffffff" opacity="0.03" />
+
+    <g filter="url(#neonGlow)" transform="translate(0, -10)">
+      <polygon points="250,150 290,170 250,190 210,170" fill="#00f3ff" opacity="0.9"/>
+      <polygon points="210,170 250,190 250,240 210,220" fill="#00f3ff" opacity="0.5"/>
+      <polygon points="250,190 290,170 290,220 250,240" fill="#00f3ff" opacity="0.2"/>
+      <polyline points="210,170 250,190 290,170" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="250" y1="190" x2="250" y2="240" stroke="#ffffff" stroke-width="1.5"/>
+    </g>
+
+    <path d="M 245 195 L 260 195 L 250 210 L 255 210 L 240 230 L 245 212 L 240 212 Z" fill="#ff00ff" filter="url(#neonGlow)" transform="translate(0, -10)"/>
+
+    <polygon points="230,300 270,300 285,340 330,355 170,355 215,340" fill="#0d0d1a" stroke="#ff00ff" stroke-width="2" filter="url(#neonGlow)"/>
+    <line x1="200" y1="345" x2="300" y2="345" stroke="#00f3ff" stroke-width="2" opacity="0.5" />
+  </g>
+
+  <circle cx="150" cy="170" r="2" fill="#00f3ff" filter="url(#neonGlow)"/>
+  <circle cx="350" cy="270" r="3" fill="#ff00ff" filter="url(#neonGlow)"/>
+  <circle cx="130" cy="240" r="1.5" fill="#ffffff" filter="url(#neonGlow)"/>
+</svg>
