@@ -16,3 +16,11 @@ h1, h2, h3, h4, h5, h6 {
     font-optical-sizing: auto;
     font-weight: 700;
 }
+
+.custom-popover {
+  --bs-popover-bg: #212529;
+  --bs-popover-border-color: #ADB5BD;
+  --bs-popover-header-bg: #ADB5BD;
+  --bs-popover-header-color: #212529;
+  --bs-popover-body-color: #E9ECEF;
+}
