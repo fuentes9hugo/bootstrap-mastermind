@@ -24,3 +24,14 @@ h1, h2, h3, h4, h5, h6 {
   --bs-popover-header-color: #212529;
   --bs-popover-body-color: #E9ECEF;
 }
+
+input, select, textarea, .input-group-text {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border-color: #FFC107 !important;
+    color: #E9ECEF !important;
+}
+
+option {
+    background-color: #212529;
+}

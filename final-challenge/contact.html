@@ -31,16 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbar-spy">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#product">Producto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#specs">Especificaciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#exps">Experiencias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#stores">Tiendas</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                         </li>
                     </ul>
                     <div class="navbar-nav">
@@ -51,15 +42,85 @@
         </nav>
     </header>
     <main class="flex-fill d-flex align-items-center justify-content-center">
-        <section class="container">
+        <section class="container pb-5 pb-lg-0">
             <div class="row justify-content-center">
                 <div class="col-10 col-md-8">
-                    <p>Hola</p>
+                    <h1 class="text-uppercase">Contactar</h1>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" required="">
+                                <div class="invalid-feedback">
+                                    Es necesario un nombre.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="country" class="form-label">País</label>
+                                <input type="text" class="form-control" id="country" required="">
+                                <div class="invalid-feedback">
+                                    Es necesartio rellenar el campo País.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="town" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="town" required="">
+                                <div class="invalid-feedback">
+                                    Es necesario rellenar el campo ciudad.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="tu@email.com" required="">
+                                <div class="invalid-feedback">
+                                    Introduzca un email válido.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="model" class="form-label">Modelo</label>
+                                <select class="form-select form-select-dark" id="model" required="">
+                                    <option value="">Elige...</option>
+                                    <option>PC (AMD Ryzen 9 9950X3D)</option>
+                                    <option>PC (Intel Core i9 14900K)</option>
+                                    <option>PC (AMD Ryzen 7 9700X)</option>
+                                    <option>PC (Intel Core Ultra 7 265K)</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Seleccione un modelo.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="customer-type" id="particular" checked>
+                                    <label class="form-check-label" for="particular">Particular</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="customer-type" id="company">
+                                    <label class="form-check-label" for="company">Empresa</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5"></textarea>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <button class="w-100 btn btn-newbtndark btn-lg mb-3 mx-auto rounded-0 text-uppercase" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container-fluid bg-newbglight text-newtextdark py-3 position-absolute bottom-0" data-bs-theme="dark">
+    <footer class="container-fluid bg-newbglight text-newtextdark py-3" data-bs-theme="dark">
         <div class="text-center">
             <p class="mb-0"><small>© Copyright PixelVibe | Calle Mayor 12, Madrid | +34 910 123 456</small></p>
         </div>
